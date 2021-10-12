@@ -75,3 +75,27 @@
   line-height: 21px;
   font-weight: 500;
 }
+
+.banner__container-dot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 36px;
+  position: absolute;
+  top: 443px;
+  left: 49%;
+}
+
+.banner__dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--text-button);
+  border-radius: 50%;
+}
+
+.banner__dot-active {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--button-dot);
+}
