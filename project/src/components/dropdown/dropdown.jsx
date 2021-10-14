@@ -7,8 +7,8 @@ function Dropdown({selected, setSelected}) {
     <>
       <div className="dropdown">
         <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
-          {selected}
-          <span className="dropdown__icon">
+          {(selected) ? selected : 'Выберите цель кредита'}
+          <span className={(isActive) ? "dropdown__icon-active" : "dropdown__icon"}>
             <img src="./image/arrow.svg"/>
           </span>
         </div>
@@ -21,7 +21,7 @@ function Dropdown({selected, setSelected}) {
                 setIsActive(false)
               }}
             >
-              {option}
+              <span className="dropdown__text">{option}</span>
             </div>
           ))}
         </div>

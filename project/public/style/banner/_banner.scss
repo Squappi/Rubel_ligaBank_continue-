@@ -2,9 +2,12 @@
 
 .banner {
   min-height: 400px;
-  background-color: var(--button-color);
   margin-bottom: 61px;
   background-image: url("../../image/main-image.png");
+}
+
+.banner-hidden {
+  display: none;
 }
 
 .banner__gradient {
